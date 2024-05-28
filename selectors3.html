@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: black;
+        }
+        /* When the mouse is moved at P, it is going to change his color */
+        p:hover {
+            color: orange;
+        }
+        /* The second p inside a Div will change his color */
+        div p:nth-child(2) {
+            color: blue;
+        }
+        /* The first letter will be in this color */
+        p::first-letter {
+            color: grey;
+        }
+        /* before the P add this emoji */
+        p::before {
+            content: "💫";
+        }
+        /* now add the content after the P */
+        p::after {
+            content: "👀";
+        }
+        /* change the placeholder */
+        ::placeholder {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello world!</p>
+    <div>
+        <p>This p</p>
+        <p>Gonna change</p>
+        <p>Wuu</p>
+    </div>
+    <input type="text", placeholder="Name">
+</body>
+</html>

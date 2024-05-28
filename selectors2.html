@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors2</title>
+</head>
+<style>
+    /* Take all the p which are inside a div */
+    div p {
+        color: lime;
+    }
+    /* Take all the divs that will be inside another div*/
+    div > div {
+        background: plum;
+    }
+    .not_affected {
+        background: red;
+    }
+    /* Take the statement after the "+" that continue after the statement indicated before the "+" */
+    div + section {
+        background: black;
+        color: white;
+    }
+    /* Take all the brothers selectors p after the div */
+    div ~ p {
+        background: goldenrod;
+    }
+</style>
+<body>
+    <div>
+        <p>A new style</p>
+        <p>will be</p>
+        <div>
+            <p>I'm in a new div</p>
+            <div>
+                I'm another dive
+                <div class="not_affected">Will I be affected?</div>
+            </div>
+        </div>
+        <p>awesome</p>
+    </div>
+    <section>
+        I'm a div inside a section!
+    </section>
+</body>
+</html>

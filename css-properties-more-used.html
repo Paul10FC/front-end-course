@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PROPERTIES</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            width: 300px;
+            height: 350px;
+            background-color: papayawhip;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+        }
+
+        .card p {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .card p:nth-child(3) {
+            color: turquoise;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .item {
+            border-radius: 100px;
+            background-color: white;            
+            border: 1px solid;
+        }
+
+        .item:hover {
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3274988/pexels-photo-3274988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dog">
+            <p>The dogs are better than cats</p>
+            <p>Love</p>
+            <div class="container">
+                <a href="https://www.thesprucepets.com/reasons-dogs-are-better-than-cats-1118371">
+                    <button class="item" >show me</button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
